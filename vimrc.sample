@@ -371,4 +371,7 @@ nnoremap k gk
 au BufNewFile,BufRead *.mxml set filetype=mxml
 au BufNewFile,BufRead *.as set filetype=actionscript
 
+"追加プラグインの読み込み
+call pathogen#infect()
+
 " Copyright (C) 2007 KaoriYa/MURAOKA Taro
