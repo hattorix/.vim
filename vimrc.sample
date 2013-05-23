@@ -201,6 +201,8 @@ set wildmenu
 set formatoptions+=mM
 " 日本語整形スクリプト(by. 西岡拓洋さん)用の設定
 let format_allow_over_tw = 1    " ぶら下り可能幅
+" vi 互換モード (compatible:vi 互換モードにする)
+set nocompatible
 
 "---------------------------------------------------------------------------
 " GUI固有ではない画面表示の設定:
@@ -341,6 +343,16 @@ endif
 :let g:miniBufExplMapWindowNavVim = 1
 :let g:miniBufExplMapWindowNavArrows = 1
 :let g:miniBufExplMapCTabSwitchBuffs = 1
+
+"-----------------------------------------------------------------------------
+" ファイルタイプごとの設定
+"
+"ファイルタイプの自動検出
+filetype on
+"ファイルタイプ用のインデント設定を自動読み込み
+filetype indent on
+"ファイルタイプ用のプラグインを自動読み込み
+filetype plugin on
 
 "-----------------------------------------------------------------------------
 " マップ定義
