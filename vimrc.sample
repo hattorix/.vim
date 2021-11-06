@@ -231,6 +231,8 @@ set cmdheight=2
 set showcmd
 " タイトルを表示
 set title
+" シンタックスハイライトを有効
+syntax on
 " 画面を黒地に白にする (次行の先頭の " を削除すれば有効になる)
 if &term == 'xterm-256color'
   " :highlight LineNr ctermfg=196 して行番号が真っ赤になれば 256 対応
