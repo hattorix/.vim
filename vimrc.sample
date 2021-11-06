@@ -385,5 +385,9 @@ au BufNewFile,BufRead *.as set filetype=actionscript
 
 "追加プラグインの読み込み
 call pathogen#infect()
+"追加プラグインの読み込み
+call vundle#begin()
+call vundle#end()
+filetype plugin indent on
 
 " Copyright (C) 2007 KaoriYa/MURAOKA Taro
