@@ -385,8 +385,14 @@ au BufNewFile,BufRead *.as set filetype=actionscript
 
 "追加プラグインの読み込み
 call pathogen#infect()
+
 "追加プラグインの読み込み
 call vundle#begin()
+Plugin 'fatih/vim-go'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'motemen/git-vim'
+Plugin 'thinca/vim-quickrun'
+Plugin 'thinca/vim-ref'
 call vundle#end()
 filetype plugin indent on
 
